@@ -13,7 +13,7 @@ router.beforeEach((to, from, next) =>  {
   store.commit('settoken', localStorage.getItem('token'))
   
   if (to.meta.requireAuth) {//是否为设权限页面
-      if (store.state.token) {//权限所需信息是否存在
+      if (store.state.token) {//权限所需信息是否存在,这么标识在路由文件里
         //token存在时
         next()
       } else {

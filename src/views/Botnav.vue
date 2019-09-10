@@ -61,6 +61,7 @@ export default {
             }
         }
     },
+    //检测data设置的默认加载页，然后定向到此页
     created(){
         switch(this.$router.path){
             case '/botnav/index':this.selectedLabelDefault='首页'

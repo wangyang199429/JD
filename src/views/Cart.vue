@@ -12,7 +12,8 @@
         </div>
         </div>
         <cube-button style="margin:10px 0">下单</cube-button>
-        <cube-button style="margin:10px 0" @click="cartclear()">清空购物车</cube-button>
+        <cube-button style="margin:10px 0 70px 0" @click="cartclear()">清空购物车</cube-button>
+        <h1 class="box"></h1>
     </div>
 </template>
 <script>
@@ -45,11 +46,14 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-    .goods
-        padding 10px
-        text-align left 
-        .goodsright
-            float right
-        i 
-            font-size 18px
+        .goods
+            padding 10px
+            text-align left 
+            .goodsright
+                float right
+            i 
+                font-size 18px
+            .box 
+                heigth 30px
+                margin 50px
 </style>

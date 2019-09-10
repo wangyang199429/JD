@@ -8,10 +8,47 @@
     <title>xiaod3.x</title>
   </head>
   <body>
+      
+    <div id="dt">
+        <iframe src="http://127.0.0.1:5501/2.html" frameborder="0"></iframe>
+    </div>
+ 
     <noscript>
       <strong>We're sorry but xiaod3.x doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    
+    <div id="lj">
+      <div id="app"></div>
+    </div>
+    <script>
+      // window.οnlοad = function(){
+      //   if(mydone==1){
+      //     dt.style.display="none"
+      //   }else{
+          
+      //     lj.style.display="none"
+      //   }
+      // }
+        let dt = document.getElementById('dt')
+        let lj = document.getElementById('lj')
+  
+        let url = window.location.href
+        
+        let done = url.substr(url.indexOf('?')+6,1)
+        localStorage.setItem('mydone',done)
+        let mydone = localStorage.getItem('mydone')
+        console.log(mydone)
+        console.log(done)
+        if(mydone==1){
+          dt.style.display="none"
+        }else{
+          
+          lj.style.display="none"
+        }
+    </script>
+
+    
+
     <!-- built files will be auto injected -->
   </body>
-</html>
+</html> 

@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/Login">登录</router-link> |
+      <h3 class="title">小D课堂</h3>
+      <!-- <router-link to="/Login">登录</router-link> |
       <router-link to="/Register">注册</router-link>
-  
+   -->
     </div>
     <router-view/>
   </div>
@@ -16,6 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color:#999
 }
 #nav {
   padding: 30px;
@@ -27,4 +29,5 @@
     }
   }
 }
+
 </style>
